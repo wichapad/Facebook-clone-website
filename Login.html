@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="veiwport" content="width=device-width initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Facebook-Clone - log in or sign up</title>
+  </head>
+  <body style="background-color: rgb(226 232 240)">
+    <!-- Log In Start -->
+    <div class="login-container">
+      <div>
+        <div class="login-logo">
+          <img
+            class="login-logo-img"
+            src="https://funnel.io/hs-fs/hubfs/Facebook-Logo.png?width=544&height=280&name=Facebook-Logo.png"
+            alt=""
+          />
+        </div>
+        <!-- login Header -->
+        <div class="login-header">
+          <h1 style="font-size: 24px; font-weight: 300">Recent logins</h1>
+          <p style="font-size: 14px; color: #606770">
+            Click your picture or add an account.
+          </p>
+        </div>
+        <!-- Profile Login -->
+        <div class="login-card">
+          <div class="login-card-container">
+            <img
+              style="
+                width: 100%;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+              "
+              src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=826&t=st=1697539415~exp=1697540015~hmac=8a9130497e8fd6c5c5ad74c343d32d348fb83b7fb47ac9739b3d1f65e3033877"
+              alt=""
+            />
+            <div class="login-card-info">
+              <p style="font-weight: 500">Users</p>
+            </div>
+            <div id="close-show" class="login-card-close">
+              <i
+                style="font-size: 9px; font-weight: 900; color: #fff"
+                class="fa-solid fa-x"
+              ></i>
+            </div>
+            <div id="close-hide" class="login-card-close-hover">
+              <i
+                style="
+                  font-size: 12px;
+                  font-weight: 900;
+                  color: rgb(156 163 175);
+                "
+                class="fa-solid fa-x"
+              ></i>
+            </div>
+          </div>
+          <div class="login-card-container">
+            <div
+              style="
+                position: relative;
+                background-color: rgb(226 232 240);
+                width: 100%;
+                height: 160px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            ></div>
+            <div
+              style="
+                background: rgb(37, 99, 235);
+                border-radius: 100%;
+                position: absolute;
+                top: 43%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 45px;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <i
+                style="font-size: 1.8rem; color: #fff"
+                class="fa-solid fa-plus"
+              ></i>
+            </div>
+            <div class="login-card-info">
+              <p style="font-weight: 500; color: rgb(37 99 235)">Add Account</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Form Login -->
+      <div class="login-form">
+        <div class="login-form-container">
+          <form style="padding: 0.8rem">
+            <input
+              class="login-form-input"
+              type="text"
+              name="email"
+              placeholder="Email address or phone number"
+            />
+            <input
+              class="login-form-input"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+          </form>
+          <div style="padding: 0 0.8rem; text-align: center">
+            <button class="login-form-btn">Log in</button>
+            <p class="login-form-forgot">Forgotten password?</p>
+            <div
+              style="width: 100%; height: 1px; background-color: #dddfe2"
+            ></div>
+          </div>
+          <div style="padding: 1.5rem 0; text-align: center">
+            <button id="new-create" class="login-form-new">
+              Create new account
+            </button>
+          </div>
+        </div>
+
+        <div
+          style="
+            font-size: 14px;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <a style="font-weight: 700; padding-right: 0.3rem; cursor: pointer"
+            >Create a Page</a
+          >
+          <p>for a celebrity, brand or business.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Credit -->
+    <footer class="login-footer">
+      <div>
+        <a style="padding: 0.5rem">Sign Up</a>
+        <a style="padding: 0.5rem">Log in</a>
+        <a style="padding: 0.5rem">Messenger</a>
+        <a style="padding: 0.5rem">Facebook Lite</a>
+        <a style="padding: 0.5rem">Video</a>
+        <a style="padding: 0.5rem">Places</a>
+        <a style="padding: 0.5rem">Game</a>
+        <a style="padding: 0.5rem">Marketplace</a>
+        <a style="padding: 0.5rem">Meta Play</a>
+        <a style="padding: 0.5rem">Meta Store</a>
+        <a style="padding: 0.5rem">Meta Quest</a>
+        <a style="padding: 0.5rem">Instagram</a>
+        <a style="padding: 0.5rem">Threads</a>
+        <a style="padding: 0.5rem">Fundraisers</a>
+        <a style="padding: 0.5rem">Services</a>
+      </div>
+      <div style="padding: 1rem 0.5rem 0 0.5rem">
+        <p>Meta &copy 2023</p>
+      </div>
+    </footer>
+    <!-- Log In End -->
+
+    <!-- Sign Up Start -->
+    <div id="signup" class="sign-up-container">
+      <div class="sign-up-form">
+        <div class="sign-up-form-container">
+          <!-- Header Sign up -->
+          <div style="padding: 0 0.8rem 1rem">
+            <div>
+              <h1>Sign Up</h1>
+              <p>It's quick and easy.</p>
+            </div>
+            <div class="sign-up-close">
+              <i
+                id="close-signup"
+                style="
+                  font-size: 18px;
+                  font-weight: 900;
+                  color: #606770;
+                  cursor: pointer;
+                "
+                class="fa-solid fa-x"
+              ></i>
+            </div>
+          </div>
+          <div
+            style="width: 100%; height: 1px; background-color: #dddfe2"
+          ></div>
+          <!-- Form input -->
+          <div style="padding: 0.8rem 1rem">
+            <form>
+              <div style="display: flex">
+                <input
+                  class="sign-up-input"
+                  type="text"
+                  name="fname"
+                  placeholder="First name"
+                />
+                <input
+                  class="sign-up-input"
+                  style="margin-left: 0.5rem"
+                  type="text"
+                  name="lname"
+                  placeholder="Surname"
+                />
+              </div>
+              <div>
+                <input
+                  class="sign-up-input"
+                  style="margin: 0.5rem 0"
+                  type="text"
+                  name="email"
+                  placeholder="Mobile number or email address"
+                />
+                <input
+                  class="sign-up-input"
+                  type="password"
+                  name="password"
+                  placeholder="New password"
+                />
+              </div>
+              <!-- Select Date -->
+              <div style="margin: 0.5rem 0">
+                <p style="font-size: 12px; color: rgb(156 163 175)">
+                  Date of birth
+                </p>
+                <div class="select-date">
+                  <select id="select-day"></select>
+                  <select style="margin: 0 0.5rem" id="select-month">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                  </select>
+
+                  <select id="select-year"></select>
+                </div>
+              </div>
+              <!-- Select gender -->
+              <div>
+                <p style="font-size: 12px; color: rgb(156 163 175)">Gender</p>
+                <div class="select-gender">
+                  <div class="sign-up-gender-box">
+                    <label for="female" style="font-size: 14px">Female</label>
+                    <input id="female" type="radio" value="female" />
+                  </div>
+                  <div style="margin: 0 0.5rem" class="sign-up-gender-box">
+                    <label for="male" style="font-size: 14px">Male</label>
+                    <input id="male" type="radio" value="male" />
+                  </div>
+                  <div class="sign-up-gender-box">
+                    <label for="custom" style="font-size: 14px">Custom</label>
+                    <input id="custom" type="radio" value="custom" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Privacy -->
+          <div style="padding: 0 1rem">
+            <div
+              style="
+                margin-bottom: 0.5rem;
+                font-size: 12px;
+                color: rgb(156 163 175);
+              "
+            >
+              <p>
+                People who use our service may have uploaded your contact
+                information to Facebook. <a class="privacy-link">Learn more.</a>
+              </p>
+            </div>
+            <div style="font-size: 12px; color: rgb(156 163 175)">
+              <p>
+                By clicking Sign Up, you agree to our
+                <a class="privacy-link"
+                  >Terms, Privacy Policy and Cookies Policy.</a
+                >
+                You may receive SMS notifications from us and can opt out at any
+                time.
+              </p>
+            </div>
+          </div>
+          <!-- Sign up button -->
+          <div class="sign-up-btn-container">
+            <button class="sign-up-btn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sign Up End -->
+  </body>
+
+  <script src="index.js"></script>
+</html>
