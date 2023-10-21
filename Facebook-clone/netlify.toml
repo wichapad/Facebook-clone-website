@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/login"
-  to = "/facebook-clone/login.html"
-  status = 200
