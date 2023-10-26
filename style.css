@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;0,900;1,200&display=swap');
 
+:root {
+    --bg-color-container: rgb(38 38 38);
+    --bg-color-icons: rgb(64 64 64);
+    --text-color: rgb(209 213 219);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -289,7 +295,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #242526;
+    background-color: var(--bg-color-container);
     padding: 0.5rem;
 }
 
@@ -305,7 +311,9 @@
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: rgb(63 63 70);
+    background-color: var(--bg-color-icons);
+    color: var(--text-color);
+    font-size: 20px;
     border-radius: 50px;
     margin: 0 0.3rem;
     cursor: pointer;
@@ -326,7 +334,8 @@
 }
 
 .video-card-btn {
-    background-color: rgb(63 63 70);
+    background-color: var(--bg-color-icons);
+    color: var(--text-color);
     width: 50px;
     height: 50px;
     display: flex;
@@ -349,9 +358,9 @@
     position: relative;
     width: 148px;
     height: 250px;
-    background-color: #242526;
+    background-color: var(--bg-color-container);
     border-radius: 10px;
-    margin: 0.25rem;
+    margin-right: 0.5rem;
     cursor: pointer;
 }
 
@@ -365,7 +374,7 @@
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #242526;
+    background-color: var(--bg-color-container);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -402,6 +411,9 @@
     position: absolute;
     bottom: 3%;
     left: 23%;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
 }
 
 /* Card create story */
@@ -421,12 +433,16 @@
     position: absolute;
     bottom: 3%;
     left: 8%;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
 }
 
 /* --------- Video Card --------- */
 /* --------- Search bars --------- */
 .search-container {
-    background-color: #242526;
+    margin-top: 1.5rem;
+    background-color: var(--bg-color-container);
     border-radius: 10px;
     padding: 1rem;
 }
@@ -434,15 +450,23 @@
 .search-bar-input {
     width: 100%;
     border-radius: 30px;
-    padding: 0.7rem 1rem;
+    padding: 0.55rem 1rem;
     outline: none;
     border: none;
-    background-color: rgb(63 63 70);
-    font-size: 16px;
+    background-color: var(--bg-color-icons);
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .search-bar-input::placeholder {
-    color: #E4E6EB;
+    color: var(--text-color);
+}
+
+.search-bar-icons {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 /* --------- Search bars --------- */

@@ -13,7 +13,7 @@
     />
     <title>Facebook-clone - Home</title>
   </head>
-  <body style="background-color: #18191a;">
+  <body style="background-color: #18191a">
     <!-- Navbar -->
     <div>
       <nav class="navbar-home">
@@ -32,26 +32,20 @@
               />
             </li>
             <li class="navbar-home-li">
-              <i
-                style="color: #E4E6EB"
-                class="fa-solid fa-magnifying-glass"
-              ></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
             </li>
           </ul>
         </div>
         <div>
           <ul class="navbar-home-ul">
             <li class="navbar-home-li">
-              <i style="color: #E4E6EB" class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-plus"></i>
             </li>
             <li class="navbar-home-li">
-              <i
-                style="color: #E4E6EB"
-                class="fa-brands fa-facebook-messenger"
-              ></i>
+              <i class="fa-brands fa-facebook-messenger"></i>
             </li>
             <li class="navbar-home-li">
-              <i style="color: #E4E6EB" class="fa-solid fa-bell"></i>
+              <i class="fa-solid fa-bell"></i>
             </li>
             <li class="navbar-home-li">
               <img
@@ -70,21 +64,15 @@
       </nav>
     </div>
     <!-- video reel -->
-    <div style="margin: 5rem 0;">
+    <div style="margin: 5rem 0 0 0">
       <div>
         <div class="video-card-container">
           <div class="video-card-btn-container">
             <div id="video-card-btn-left" class="video-card-btn">
-              <i
-                style="color: #E4E6EB; font-size: 18px"
-                class="fa-solid fa-chevron-left"
-              ></i>
+              <i style="font-size: 18px" class="fa-solid fa-chevron-left"></i>
             </div>
             <div id="video-card-btn-right" class="video-card-btn">
-              <i
-                style="color: #E4E6EB; font-size: 18px"
-                class="fa-solid fa-chevron-right"
-              ></i>
+              <i style="font-size: 18px" class="fa-solid fa-chevron-right"></i>
             </div>
           </div>
           <!-- video Card -->
@@ -110,7 +98,7 @@
               />
             </div>
             <div class="create-story-text">
-              <p style="color: #fff; font-size: 14px; font-weight: 500">
+              <p>
                 Create Story
               </p>
             </div>
@@ -125,7 +113,7 @@
               />
             </div>
             <div class="video-card-text">
-              <p style="color: #fff; font-size: 14px; font-weight: 500">
+              <p>
                 Name Users
               </p>
             </div>
@@ -140,7 +128,7 @@
               />
             </div>
             <div class="video-card-text">
-              <p style="color: #fff; font-size: 14px; font-weight: 500">
+              <p>
                 Name Users
               </p>
             </div>
@@ -155,7 +143,7 @@
               />
             </div>
             <div class="video-card-text">
-              <p style="color: #fff; font-size: 14px; font-weight: 500">
+              <p>
                 Name Users
               </p>
             </div>
@@ -170,7 +158,7 @@
               />
             </div>
             <div class="video-card-text">
-              <p style="color: #fff; font-size: 14px; font-weight: 500">
+              <p>
                 Name Users
               </p>
             </div>
@@ -180,17 +168,60 @@
     </div>
     <!-- Search Bars -->
     <div class="search-container">
-        <div style="display: flex; align-items: center;">
-            <div class="search-profile">
-                <img style="width: 40px; object-fit: cover; border-radius: 100%; cursor: pointer;" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=826&t=st=1697539415~exp=1697540015~hmac=8a9130497e8fd6c5c5ad74c343d32d348fb83b7fb47ac9739b3d1f65e3033877" alt="">
-            </div>
-            <div style="margin-left: 0.5rem;">
-                <form>
-                    <input class="search-bar-input" type="text" placeholder="What's on your mind?">
-                </form>
-            </div>
+      <div style="display: flex; align-items: center">
+        <div class="search-profile">
+          <img
+            style="
+              width: 40px;
+              object-fit: cover;
+              border-radius: 100%;
+              cursor: pointer;
+            "
+            src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=826&t=st=1697539415~exp=1697540015~hmac=8a9130497e8fd6c5c5ad74c343d32d348fb83b7fb47ac9739b3d1f65e3033877"
+            alt=""
+          />
         </div>
-        <div style="width: 100%; background-color: #E4E6EB; height: 1px;"></div>
+        <div style="margin-left: 0.5rem; flex: 1">
+          <form>
+            <input
+              class="search-bar-input"
+              type="text"
+              placeholder="What's on your mind?"
+            />
+          </form>
+        </div>
+      </div>
+      <div
+        style="
+          width: 100%;
+          background-color: rgb(64 64 64);
+          height: 1px;
+          margin: 0.5rem 0;
+        "
+      ></div>
+      <div style="padding: 0 0.3rem; display: flex; justify-content: space-between">
+        <div class="search-bar-icons">
+          <i
+            style="color: rgb(220 38 38); font-size: 20px; margin-right: 0.5rem"
+            class="fa-solid fa-video"
+          ></i>
+          <p>Live Video</p>
+        </div>
+        <div class="search-bar-icons">
+          <i
+            style="color: rgb(22 163 74); font-size: 20px; margin-right: 0.5rem"
+            class="fa-regular fa-file-image"
+          ></i>
+          <p>Photo/Viedo</p>
+        </div>
+        <div class="search-bar-icons">
+          <i
+            style="color: rgb(202 138 4); font-size: 20px; margin-right: 0.5rem"
+            class="fa-regular fa-face-smile"
+          ></i>
+          <p>Feeling/Activity</p>
+        </div>
+      </div>
     </div>
   </body>
   <script src="/index.js"></script>
