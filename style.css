@@ -175,9 +175,10 @@
 /* --------- Login Css --------- */
 
 /* --------- Sign up Css --------- */
-#signup{
+#signup {
     display: none;
 }
+
 .sign-up-container {
     position: fixed;
     top: 0;
@@ -279,7 +280,174 @@
 }
 
 /* --------- Sign up Css --------- */
+/* --------- Navbar Home --------- */
+.navbar-home {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #242526;
+    padding: 0.5rem;
+}
 
+.navbar-home-ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-home-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(63 63 70);
+    border-radius: 50px;
+    margin: 0 0.3rem;
+    cursor: pointer;
+}
+
+/* --------- Navbar Home --------- */
+/* --------- Video Card --------- */
+.video-card-btn-container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.video-card-btn {
+    background-color: rgb(63 63 70);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#video-card-btn-left {
+    visibility: hidden;
+}
+
+.video-card-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.video-card {
+    position: relative;
+    width: 148px;
+    height: 250px;
+    background-color: #242526;
+    border-radius: 10px;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+.video-card:nth-child(5) {
+    display: none;
+}
+
+/* Card create story */
+.create-story-icon-outline {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #242526;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 3;
+}
+
+.create-story-icon-inline {
+    background-color: #0866FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+}
+
+.create-story-img {
+    width: 148px;
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    filter: brightness(80%);
+}
+
+.create-story-img:hover {
+    filter: brightness(70%);
+}
+
+.create-story-text {
+    position: absolute;
+    bottom: 3%;
+    left: 23%;
+}
+
+/* Card create story */
+.video-card-img {
+    width: 148px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(80%);
+}
+
+.video-card-img:hover {
+    filter: brightness(70%);
+}
+
+.video-card-text {
+    position: absolute;
+    bottom: 3%;
+    left: 8%;
+}
+
+/* --------- Video Card --------- */
+/* --------- Search bars --------- */
+.search-container {
+    background-color: #242526;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.search-bar-input {
+    width: 100%;
+    border-radius: 30px;
+    padding: 0.7rem 1rem;
+    outline: none;
+    border: none;
+    background-color: rgb(63 63 70);
+    font-size: 16px;
+}
+
+.search-bar-input::placeholder {
+    color: #E4E6EB;
+}
+
+/* --------- Search bars --------- */
+
+/* Media Querie */
 @media (min-width: 768px) {
     .login-container {
         flex-direction: row;
