@@ -463,13 +463,111 @@
 }
 
 .search-bar-icons {
+    padding: 0.5rem 0.8rem;
     display: flex;
     align-items: center;
     color: var(--text-color);
     cursor: pointer;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.search-bar-icons:hover {
+    background: var(--bg-color-icons);
 }
 
 /* --------- Search bars --------- */
+
+/* --------- Content --------- */
+.content-container {
+    background-color: var(--bg-color-container);
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.top-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.3rem 0;
+}
+
+#subText-content {
+    display: none;
+}
+
+.show-more {
+    cursor: pointer;
+}
+
+.show-more:hover {
+    text-decoration: underline;
+}
+
+.footer-content-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.footer-content-btn-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.3rem 0;
+}
+
+.footer-content-btn {
+    width: 100%;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+}
+
+.footer-content-btn:hover {
+
+    background: var(--bg-color-icons);
+}
+
+.footer-content-btn:nth-child(2) {
+    margin: 0 0.5rem;
+}
+
+.footer-content-comments-input {
+    margin-left: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--bg-color-icons);
+
+}
+
+.footer-content-comments-input::placeholder {
+    color: var(--text-color);
+}
+
+.footer-content-comments-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.footer-content-comments-icons:hover {
+
+    background: rgba(38, 38, 38, 0.3);
+
+}
+
+/* --------- Content --------- */
 
 /* Media Querie */
 @media (min-width: 768px) {
