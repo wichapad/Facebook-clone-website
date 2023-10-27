@@ -286,6 +286,11 @@
 }
 
 /* --------- Sign up Css --------- */
+/* --------- home container --------- */
+.home-content-layout {
+    position: relative;
+}
+
 /* --------- Navbar Home --------- */
 .navbar-home {
     position: fixed;
@@ -295,6 +300,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--bg-color-container);
     padding: 0.5rem;
 }
@@ -319,11 +325,19 @@
     cursor: pointer;
 }
 
+.navbar-home-li:hover {
+    background: rgba(64, 64, 64, 0.8);
+}
+
+.navbar-home-li-desktop {
+    display: none;
+}
+
 /* --------- Navbar Home --------- */
 /* --------- Video Card --------- */
 .video-card-btn-container {
     position: absolute;
-    top: 35%;
+    top: 125px;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
@@ -345,9 +359,9 @@
     cursor: pointer;
 }
 
-#video-card-btn-left {
+/* #video-card-btn-left {
     visibility: hidden;
-}
+} */
 
 .video-card-container {
     display: flex;
@@ -562,14 +576,50 @@
 }
 
 .footer-content-comments-icons:hover {
-
     background: rgba(38, 38, 38, 0.3);
-
 }
 
 /* --------- Content --------- */
 
 /* Media Querie */
+@media (min-width: 554px) {
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .video-card-btn-container {
+        top: 200px;
+    }
+
+    .home-content-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-conent-container {
+        max-width: 550px;
+    }
+}
+
+@media (min-width: 700px) {
+    .navbar-home-li-desktop {
+        display: block;
+        color: var(--text-color);
+        padding: 0.5rem;
+        margin: 0 0.8rem;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .navbar-home-li-desktop:hover {
+        color: #0866FF;
+    }
+}
+
 @media (min-width: 768px) {
     .login-container {
         flex-direction: row;
@@ -597,6 +647,7 @@
     .login-form {
         padding: 3rem 0;
     }
+
 
 }
 
