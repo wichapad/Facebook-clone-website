@@ -11,3 +11,19 @@ function showMoretext() {
     subText.style.display = "block";
   }
 }
+
+// Open menu profile
+const userProfile = document.getElementById("user-profile");
+const menuProfile = document.getElementById("navbar-menu-profile");
+
+userProfile.addEventListener("click", () => {
+  if (menuProfile.style.display === "none") {
+    menuProfile.style.display = "block";
+  } else {
+    menuProfile.style.display = "none";
+  }
+});
+// Logout
+document.getElementById("logout-btn").addEventListener("click", () => {
+  window.location.href = "login.html";
+});

@@ -333,6 +333,48 @@
     display: none;
 }
 
+.navbar-menu-profile {
+    position: absolute;
+    top: 2.8rem;
+    right: 20%;
+    background: var(--bg-color-container);
+    width: 320px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.menu-profile {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 0.5rem 0.3rem;
+    cursor: pointer;
+}
+
+.menu-profile:hover {
+    background: rgba(64, 64, 64, 0.8);
+    border-radius: 5px;
+
+}
+
+.menu-profile-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    background-color: var(--bg-color-icons);
+    color: var(--text-color);
+    border-radius: 50px;
+}
+
+.menu-profile-text {
+    margin-left: 0.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
 /* --------- Navbar Home --------- */
 /* --------- Video Card --------- */
 .video-card-btn-container {

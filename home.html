@@ -67,18 +67,56 @@
               <li class="navbar-home-li">
                 <i class="fa-solid fa-bell"></i>
               </li>
-              <li class="navbar-home-li">
-                <img
-                  style="
-                    width: 40px;
-                    height: 40px;
-                    object-fit: cover;
-                    border-radius: 50px;
-                  "
-                  src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=826&t=st=1697539415~exp=1697540015~hmac=8a9130497e8fd6c5c5ad74c343d32d348fb83b7fb47ac9739b3d1f65e3033877"
-                  alt=""
-                />
-              </li>
+              <div style="position: relative">
+                <li id="user-profile" class="navbar-home-li">
+                  <img
+                    style="
+                      width: 40px;
+                      height: 40px;
+                      object-fit: cover;
+                      border-radius: 50px;
+                    "
+                    src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=826&t=st=1697539415~exp=1697540015~hmac=8a9130497e8fd6c5c5ad74c343d32d348fb83b7fb47ac9739b3d1f65e3033877"
+                    alt=""
+                  />
+                </li>
+                <!-- Inside profile -->
+                <div id="navbar-menu-profile" class="navbar-menu-profile">
+                  <div class="menu-profile">
+                    <img
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                        border-radius: 50px;
+                      "
+                      src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=826&t=st=1697539415~exp=1697540015~hmac=8a9130497e8fd6c5c5ad74c343d32d348fb83b7fb47ac9739b3d1f65e3033877"
+                      alt=""
+                    />
+                    <p class="menu-profile-text">Name Users</p>
+                  </div>
+                  <div
+                    style="
+                      width: 100%;
+                      background-color: rgb(64 64 64);
+                      height: 1px;
+                      margin: 0.5rem 0;
+                    "
+                  ></div>
+                  <div class="menu-profile">
+                    <div class="menu-profile-icons"><i class="fa-solid fa-gear"></i></div>
+                    <p class="menu-profile-text">Settings & Privacy</p>
+                  </div>
+                  <div class="menu-profile">
+                    <div class="menu-profile-icons"><i class="fa-regular fa-circle-question"></i></div>
+                    <p class="menu-profile-text">Help & support</p>
+                  </div>
+                  <div id="logout-btn" class="menu-profile">
+                    <div class="menu-profile-icons"><i class="fa-solid fa-right-from-bracket"></i></div>
+                    <p class="menu-profile-text">Log Out</p>
+                  </div>
+                </div>
+              </div>
             </ul>
           </div>
         </nav>
